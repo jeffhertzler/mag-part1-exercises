@@ -7,14 +7,16 @@ var _ = require('ramda');
 // Refactor to remove all arguments by partially applying the function
 
 var words = function(str) {
-  return split(' ', str);
+  return _.split(' ', str);
 };
 
 // Exercise 1a
 //==============
 // Use map to make a new words fn that works on an array of strings.
 
-var sentences = undefined;
+var sentences = function(arr) {
+  return _.map(words, arr);
+};
 
 
 // Exercise 2
@@ -40,7 +42,7 @@ var max = function(xs) {
   }, -Infinity, xs);
 };
 
-  
+
 // Bonus 1:
 // ============
 // wrap array's slice to be functional and curried.
