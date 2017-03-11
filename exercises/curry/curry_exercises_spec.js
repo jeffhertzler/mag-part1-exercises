@@ -26,7 +26,7 @@ describe("Curry Exercises", function(){
   }
 
   if (E.take != undefined) {
-    it.skip('Curry Bonus 2', function(){
+    it('Curry Bonus 2', function(){
       assert.deepEqual(E.take(2)(['a', 'b', 'c']), ['a', 'b']);
     });
   }
