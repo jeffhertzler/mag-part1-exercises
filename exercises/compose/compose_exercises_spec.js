@@ -12,7 +12,7 @@ describe("Compose Exercises", function(){
     assert.equal(E.nameOfFirstCar(CARS), "Ferrari FF");
   });
 
-  it.skip('Exercise 3', function(){
+  it('Exercise 3', function(){
     assert.equal(E.averageDollarValue(CARS), 790700);
   });
 
