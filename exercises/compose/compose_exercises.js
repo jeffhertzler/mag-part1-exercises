@@ -41,13 +41,8 @@ var sanitizeNames = _.map(_.compose(_underscore, toLowerCase, _.prop('name')));
 // ============
 // Refactor availablePrices with compose.
 
-var availablePrices = function(cars) {
-  var available_cars = _.filter(_.prop('in_stock'), cars);
-  return available_cars.map(function(x){
-    return accounting.formatMoney(x.dollar_value)
-  }).join(', ');
-};
-
+var formatValue = _.compose(accounting.formatMoney, _.prop('dollar_value'));
+var availablePrices = _.compose(_.join(', '), _.map(formatValue), _.filter(_.prop('in_stock')));
 
 // Bonus 2:
 // ============
