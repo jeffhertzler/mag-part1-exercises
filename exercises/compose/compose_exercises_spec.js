@@ -24,7 +24,7 @@ describe("Compose Exercises", function(){
     assert.equal(E.availablePrices(CARS), '$700,000.00, $1,850,000.00');
   });
 
-  it.skip('Bonus 2', function(){
+  it('Bonus 2', function(){
     assert.equal(E.fastestCar(CARS), 'Aston Martin One-77 is the fastest');
   });
 });
