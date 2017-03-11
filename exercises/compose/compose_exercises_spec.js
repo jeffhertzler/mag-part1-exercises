@@ -8,7 +8,7 @@ describe("Compose Exercises", function(){
     assert.equal(E.isLastInStock(CARS), false);
   });
 
-  it.skip('Exercise 2', function(){
+  it('Exercise 2', function(){
     assert.equal(E.nameOfFirstCar(CARS), "Ferrari FF");
   });
 
