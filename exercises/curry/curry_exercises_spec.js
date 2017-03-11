@@ -15,7 +15,7 @@ describe("Curry Exercises", function(){
     assert.deepEqual(E.filterQs(['quick', 'camels', 'quarry', 'over', 'quails']), ['quick', 'quarry', 'quails']);
   });
 
-  it.skip('Exercise 3', function(){
+  it('Exercise 3', function(){
     assert.equal(E.max([323,523,554,123,5234]), 5234);
   });
 

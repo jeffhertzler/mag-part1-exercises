@@ -20,7 +20,6 @@ var sentences = _.map(words);
 
 var filterQs = _.filter(match(/q/i));
 
-
 // Exercise 3
 //==============
 // Use the helper function _keepHighest to refactor max to not reference any arguments
@@ -29,12 +28,7 @@ var filterQs = _.filter(match(/q/i));
 var _keepHighest = function(x,y){ return x >= y ? x : y; };
 
 // REFACTOR THIS ONE:
-var max = function(xs) {
-  return reduce(function(acc, x){
-    return _keepHighest(acc, x);
-  }, -Infinity, xs);
-};
-
+var max = _.reduce(_keepHighest, -Infinity);
 
 // Bonus 1:
 // ============
