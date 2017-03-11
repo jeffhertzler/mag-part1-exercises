@@ -16,7 +16,7 @@ describe("Compose Exercises", function(){
     assert.equal(E.averageDollarValue(CARS), 790700);
   });
 
-  it.skip('Exercise 4', function(){
+  it('Exercise 4', function(){
     assert.deepEqual(E.sanitizeNames(CARS), ['ferrari_ff', 'spyker_c12_zagato', 'jaguar_xkr_s', 'audi_r8', 'aston_martin_one_77', 'pagani_huayra']);
   });
 
