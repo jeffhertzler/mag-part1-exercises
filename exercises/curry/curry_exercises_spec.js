@@ -20,7 +20,7 @@ describe("Curry Exercises", function(){
   });
 
   if (E.slice != undefined) {
-    it.skip('Curry Bonus 1', function(){
+    it('Curry Bonus 1', function(){
       assert.deepEqual(E.slice(1)(3)(['a', 'b', 'c']), ['b', 'c']);
     });
   }
