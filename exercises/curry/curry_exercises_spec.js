@@ -11,7 +11,7 @@ describe("Curry Exercises", function(){
     assert.deepEqual(E.sentences(["Jingle bells Batman smells", "Robin laid an egg"]), [['Jingle', 'bells', 'Batman', 'smells'], ['Robin', 'laid', 'an', 'egg']]);
   });
 
-  it.skip('Exercise 2', function(){
+  it('Exercise 2', function(){
     assert.deepEqual(E.filterQs(['quick', 'camels', 'quarry', 'over', 'quails']), ['quick', 'quarry', 'quails']);
   });
 
